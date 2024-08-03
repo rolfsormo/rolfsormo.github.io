@@ -34,6 +34,7 @@ document.getElementById('sendMessageButton').addEventListener('click', () => {
       };
       const targetOrigin = 'https://kapuroastery.fi/';
       window.opener.postMessage(message, targetOrigin);
+      console.log('Message sent!');
   } else {
       console.warn('No opener found!');
   }
